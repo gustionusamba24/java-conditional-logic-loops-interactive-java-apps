@@ -1,0 +1,9 @@
+# Ignore IDE and editor files in all folders
+.vscode/
+.idea/
+**/.vscode/
+**/.idea/
+
+# Ignore node modules
+node_modules/
+**/node_modules/
