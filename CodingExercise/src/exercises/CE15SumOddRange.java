@@ -13,21 +13,20 @@ public class CE15SumOddRange {
 
     public static int sumOdd(int start, int end) {
 
-        if (end < start) {
+        if (start <= 0 || end <= 0 || end < start) {
             return -1;
         }
 
         int sum = 0;
-        if ((start > 0) && (end > 0)) {
-            for (int i = start; i <= end; i++) {
-                if (isOdd(i)) {
-                    sum += i;
-                }
-            }
 
-            return sum;
+        for (int i = start; i <= end; i++) {
+            if (isOdd(i)) {
+                sum += i;
+            }
         }
 
-        return -1;
+        return sum;
+
+
     }
 }
