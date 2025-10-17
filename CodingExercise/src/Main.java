@@ -3,6 +3,7 @@
 
 import exercises.CE15SumOddRange;
 import exercises.CE17FirstLastDigitSum;
+import exercises.CE18EvenDigitSum;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,5 +32,14 @@ public class Main {
         System.out.println("sumFirstAndLastDigit(5) = " + CE17FirstLastDigitSum.sumFirstAndLastDigit(5));
         System.out.println("sumFirstAndLastDigit(-10) = " + CE17FirstLastDigitSum.sumFirstAndLastDigit(-10));
         System.out.println("sumFirstAndLastDigit(2346) = " + CE17FirstLastDigitSum.sumFirstAndLastDigit(2346));
+
+        System.out.println();
+        System.out.println("CE18EvenDigitSum Class");
+        System.out.println("Method: getEvenDigitSum(int number)");
+        System.out.println();
+
+        System.out.println("getEvenDigitSum(123456789) = " + CE18EvenDigitSum.getEvenDigitSum(123456789));
+        System.out.println("getEvenDigitSum(252) = " + CE18EvenDigitSum.getEvenDigitSum(252));
+        System.out.println("getEvenDigitSum(-22) = " + CE18EvenDigitSum.getEvenDigitSum(-22));
     }
 }
