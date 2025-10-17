@@ -4,6 +4,7 @@
 import exercises.CE15SumOddRange;
 import exercises.CE17FirstLastDigitSum;
 import exercises.CE18EvenDigitSum;
+import exercises.CE21FactorPrinter;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,5 +42,25 @@ public class Main {
         System.out.println("getEvenDigitSum(123456789) = " + CE18EvenDigitSum.getEvenDigitSum(123456789));
         System.out.println("getEvenDigitSum(252) = " + CE18EvenDigitSum.getEvenDigitSum(252));
         System.out.println("getEvenDigitSum(-22) = " + CE18EvenDigitSum.getEvenDigitSum(-22));
+
+        System.out.println();
+        System.out.println("CE21FactorPrinter Class");
+        System.out.println("Method: printFactors(int number)");
+        System.out.println();
+
+        System.out.println("printFactors(6):");
+        CE21FactorPrinter.printFactors(6);
+        System.out.println();
+
+        System.out.println("printFactors(32):");
+        CE21FactorPrinter.printFactors(32);
+        System.out.println();
+
+        System.out.println("printFactors(10):");
+        CE21FactorPrinter.printFactors(10);
+        System.out.println();
+
+        System.out.println("printFactors(-1):");
+        CE21FactorPrinter.printFactors(-1);
     }
 }
