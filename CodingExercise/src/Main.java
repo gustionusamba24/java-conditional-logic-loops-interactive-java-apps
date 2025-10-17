@@ -5,6 +5,7 @@ import exercises.CE15SumOddRange;
 import exercises.CE17FirstLastDigitSum;
 import exercises.CE18EvenDigitSum;
 import exercises.CE21FactorPrinter;
+import exercises.CE22GreatestCommonDivisor;
 
 public class Main {
     public static void main(String[] args) {
@@ -62,5 +63,16 @@ public class Main {
 
         System.out.println("printFactors(-1):");
         CE21FactorPrinter.printFactors(-1);
+
+        System.out.println();
+        System.out.println("CE22GreatestCommonDivisor Class");
+        System.out.println("Method: getGreatestCommonDivisor(int first, int second)");
+        System.out.println();
+
+        System.out.println("getGreatestCommonDivisor(25, 15) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(25, 15));
+        System.out.println("getGreatestCommonDivisor(12, 30) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(12, 30));
+        System.out.println("getGreatestCommonDivisor(9, 18) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(9, 18));
+        System.out.println("getGreatestCommonDivisor(81, 153) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(81, 153));
+//        System.out.println("getGreatestCommonDivisor(25, 15) = " + getGreatestCommonDivisor(25, 15));
     }
 }
