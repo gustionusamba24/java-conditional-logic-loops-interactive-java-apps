@@ -7,6 +7,7 @@ import exercises.CE18EvenDigitSum;
 import exercises.CE21FactorPrinter;
 import exercises.CE22GreatestCommonDivisor;
 import exercises.CE23PerfectNumber;
+import exercises.CE24NumberToWords;
 
 public class Main {
     public static void main(String[] args) {
@@ -86,5 +87,43 @@ public class Main {
         System.out.println("isPerfectNumber(28) = " + CE23PerfectNumber.isPerfectNumber(28));
         System.out.println("isPerfectNumber(5) = " + CE23PerfectNumber.isPerfectNumber(5));
         System.out.println("isPerfectNumber(-1) = " + CE23PerfectNumber.isPerfectNumber(-1));
+
+        System.out.println();
+        System.out.println("CE24NumberToWords Class");
+        System.out.println("Method: reverse(int number)");
+        System.out.println();
+
+        System.out.println("reverse(-121) = " + CE24NumberToWords.reverse(-121));
+        System.out.println("reverse(1212) = " + CE24NumberToWords.reverse(1212));
+        System.out.println("reverse(1234) = " + CE24NumberToWords.reverse(1234));
+        System.out.println("reverse(100) = " + CE24NumberToWords.reverse(100));
+
+        System.out.println();
+        System.out.println("Method: getDigitCount(int number)");
+        System.out.println();
+
+        System.out.println("getDigitCount(0) = " + CE24NumberToWords.getDigitCount(0));
+        System.out.println("getDigitCount(123) = " + CE24NumberToWords.getDigitCount(123));
+        System.out.println("getDigitCount(-12) = " + CE24NumberToWords.getDigitCount(-12));
+        System.out.println("getDigitCount(5200) = " + CE24NumberToWords.getDigitCount(5200));
+
+        System.out.println();
+        System.out.println("Method: numberToWords(int number)");
+        System.out.println();
+
+        System.out.println("numberToWords(123):");
+        CE24NumberToWords.numberToWords(123);
+        System.out.println();
+
+        System.out.println("numberToWords(1010):");
+        CE24NumberToWords.numberToWords(1010);
+        System.out.println();
+
+        System.out.println("numberToWords(1000):");
+        CE24NumberToWords.numberToWords(1000);
+        System.out.println();
+
+        System.out.println("numberToWords(-12):");
+        CE24NumberToWords.numberToWords(-12);
     }
 }
