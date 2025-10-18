@@ -8,6 +8,7 @@ import exercises.CE21FactorPrinter;
 import exercises.CE22GreatestCommonDivisor;
 import exercises.CE23PerfectNumber;
 import exercises.CE24NumberToWords;
+import exercises.CE25LargestPrime;
 
 public class Main {
     public static void main(String[] args) {
@@ -125,5 +126,18 @@ public class Main {
 
         System.out.println("numberToWords(-12):");
         CE24NumberToWords.numberToWords(-12);
+
+        System.out.println();
+        System.out.println("CE25LargestPrime Class");
+        System.out.println("Method: getLargestPrime(int number)");
+        System.out.println();
+
+        System.out.println("getLargestPrime(21) = " + CE25LargestPrime.getLargestPrime(21));
+        System.out.println("getLargestPrime(217) = " + CE25LargestPrime.getLargestPrime(217));
+        System.out.println("getLargestPrime(0) = " + CE25LargestPrime.getLargestPrime(0));
+        System.out.println("getLargestPrime(45) = " + CE25LargestPrime.getLargestPrime(45));
+        System.out.println("getLargestPrime(-1) = " + CE25LargestPrime.getLargestPrime(-1));
+        System.out.println("getLargestPrime(17) = " + CE25LargestPrime.getLargestPrime(17));
+        System.out.println("getLargestPrime(19) = " + CE25LargestPrime.getLargestPrime(19));
     }
 }

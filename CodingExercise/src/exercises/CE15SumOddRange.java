@@ -26,7 +26,5 @@ public class CE15SumOddRange {
         }
 
         return sum;
-
-
     }
 }
