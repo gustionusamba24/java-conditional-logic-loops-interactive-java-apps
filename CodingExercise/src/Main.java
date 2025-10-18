@@ -6,6 +6,7 @@ import exercises.CE17FirstLastDigitSum;
 import exercises.CE18EvenDigitSum;
 import exercises.CE21FactorPrinter;
 import exercises.CE22GreatestCommonDivisor;
+import exercises.CE23PerfectNumber;
 
 public class Main {
     public static void main(String[] args) {
@@ -73,6 +74,17 @@ public class Main {
         System.out.println("getGreatestCommonDivisor(12, 30) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(12, 30));
         System.out.println("getGreatestCommonDivisor(9, 18) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(9, 18));
         System.out.println("getGreatestCommonDivisor(81, 153) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(81, 153));
-//        System.out.println("getGreatestCommonDivisor(25, 15) = " + getGreatestCommonDivisor(25, 15));
+        System.out.println("getGreatestCommonDivisor(13, 39) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(13, 39));
+        System.out.println("getGreatestCommonDivisor(17, 40) = " + CE22GreatestCommonDivisor.getGreatestCommonDivisor(17, 40));
+
+        System.out.println();
+        System.out.println("CE23PerfectNumber Class");
+        System.out.println("Method: isPerfectNumber(int number)");
+        System.out.println();
+
+        System.out.println("isPerfectNumber(6) = " + CE23PerfectNumber.isPerfectNumber(6));
+        System.out.println("isPerfectNumber(28) = " + CE23PerfectNumber.isPerfectNumber(28));
+        System.out.println("isPerfectNumber(5) = " + CE23PerfectNumber.isPerfectNumber(5));
+        System.out.println("isPerfectNumber(-1) = " + CE23PerfectNumber.isPerfectNumber(-1));
     }
 }

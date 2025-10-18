@@ -1,0 +1,20 @@
+package exercises;
+
+public class CE23PerfectNumber {
+
+    public static boolean isPerfectNumber(int number) {
+
+        if (number < 1) {
+            return false;
+        }
+
+        int sumOfDivisor = 0;
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                sumOfDivisor += i;
+            }
+        }
+
+        return number == sumOfDivisor;
+    }
+}
