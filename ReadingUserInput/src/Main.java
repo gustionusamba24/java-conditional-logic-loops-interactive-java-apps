@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -5,9 +7,11 @@ public class Main {
 
         int currentYear = 2025;
 
-        System.out.println(getInputFromConsole(currentYear));
-
-        System.out.println(getInputFromScanner(currentYear));
+        try {
+            System.out.println(getInputFromConsole(currentYear));
+        } catch (Exception e) {
+            System.out.println(getInputFromScanner(currentYear));
+        }
     }
 
     public static String getInputFromConsole(int currentYear) {
@@ -23,6 +27,16 @@ public class Main {
 
     public static String getInputFromScanner(int currentYear) {
 
-        return "";
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name? ");
+        String name = scanner.nextLine();
+        System.out.println("Hi " + name + " Thank you for confirming your name");
+
+        System.out.println("What year were you born? ");
+        String dateOfBirth = scanner.nextLine();
+        int yourAge = currentYear - Integer.parseInt(dateOfBirth);
+
+        return "So you are " + yourAge + " years old";
     }
 }
