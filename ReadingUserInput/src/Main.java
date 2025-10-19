@@ -34,9 +34,34 @@ public class Main {
         System.out.println("Hi " + name + " Thank you for confirming your name");
 
         System.out.println("What year were you born? ");
-        String dateOfBirth = scanner.nextLine();
-        int yourAge = currentYear - Integer.parseInt(dateOfBirth);
 
-        return "So you are " + yourAge + " years old";
+        boolean validDOB = false;
+        int age = 0;
+
+        do {
+            System.out.println("Please enter the date of birth >= " + (currentYear - 125) + " and <= " + (currentYear));
+
+            try {
+                age = checkData(currentYear, scanner.nextLine());
+                validDOB = age >= 0;
+            } catch (NumberFormatException badUserData) {
+                System.out.println("Characters not allowed! Please try again");
+            }
+
+        } while (!validDOB);
+
+        return "So you are " + age + " " + (age > 1 ? "years" : "year") + " old";
+    }
+
+    public static int checkData(int currentYear, String dateOfBirth) {
+
+        int dob = Integer.parseInt(dateOfBirth);
+        int minimumYear = currentYear - 125; // 125 is a maximum human lifespan
+
+        if ((dob < minimumYear) || (dob > currentYear)) {
+            return -1;
+        }
+
+        return currentYear - dob;
     }
 }
