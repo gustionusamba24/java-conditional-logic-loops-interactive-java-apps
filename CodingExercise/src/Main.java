@@ -10,6 +10,7 @@ import exercises.CE23PerfectNumber;
 import exercises.CE24NumberToWords;
 import exercises.CE25LargestPrime;
 import exercises.CE26FlourPacker;
+import exercises.CE27DiagonalStar;
 
 public class Main {
     public static void main(String[] args) {
@@ -151,5 +152,29 @@ public class Main {
         System.out.println("canPack(0, 5, 4) = " + CE26FlourPacker.canPack(0, 5, 4));
         System.out.println("canPack(2, 2, 11) = " + CE26FlourPacker.canPack(2, 2, 11));
         System.out.println("canPack(-3, 2, 12) = " + CE26FlourPacker.canPack(-3, 2, 12));
+
+        System.out.println();
+        System.out.println("CE27DiagonalStar Class");
+        System.out.println("Method: printSquareStar(int number)");
+        System.out.println();
+
+        System.out.println("printSquareStar(5):");
+        CE27DiagonalStar.printSquareStar(5);
+        System.out.println();
+
+        System.out.println("printSquareStar(8):");
+        CE27DiagonalStar.printSquareStar(8);
+        System.out.println();
+
+        System.out.println("printSquareStar(1):");
+        CE27DiagonalStar.printSquareStar(1);
+        System.out.println();
+
+        System.out.println("printSquareStar(0):");
+        CE27DiagonalStar.printSquareStar(0);
+        System.out.println();
+
+        System.out.println("printSquareStar(-3):");
+        CE27DiagonalStar.printSquareStar(-3);
     }
 }
