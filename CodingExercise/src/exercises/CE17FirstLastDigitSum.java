@@ -8,6 +8,10 @@ public class CE17FirstLastDigitSum {
             return -1;
         }
 
+        if (number < 10) {
+            return number;
+        }
+
         // 2346
         int lastDigit = number % 10; // 6
         while (number >= 10) {

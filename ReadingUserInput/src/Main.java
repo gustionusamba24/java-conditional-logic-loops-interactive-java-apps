@@ -7,11 +7,12 @@ public class Main {
 
         int currentYear = 2025;
 
-        try {
+        /*try {
             System.out.println(getInputFromConsole(currentYear));
         } catch (Exception e) {
             System.out.println(getInputFromScanner(currentYear));
-        }
+        }*/
+        System.out.println(getInputFromScanner(currentYear));
     }
 
     public static String getInputFromConsole(int currentYear) {
